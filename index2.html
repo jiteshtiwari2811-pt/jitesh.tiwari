@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jitesh Tiwari</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            background: #f4f6f9;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background: linear-gradient(180deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .sidebar ul li:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        /* Main Content */
+        .main {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card {
+            background: linear-gradient(135deg, #43cea2, #185a9d);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="header">
+            Jitesh Tiwari
+        </div>
+
+        <div class="content">
+            <h2>Welcome</h2>
+            <p>This is your colorful homepage. You can customize it with your content.</p>
+
+            <div class="card">
+                <h3>Featured Section</h3>
+                <p>Add your highlights, achievements, or updates here.</p>
+            </div>
+
+            <div class="card">
+                <h3>Another Section</h3>
+                <p>Use this area for blog posts, news, or portfolio items.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
